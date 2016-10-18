@@ -1,0 +1,8 @@
+.list-group {
+	overflow-y: scroll;
+	height: 40em;
+}
+
+.details {
+	margin-left: 20em;
+}

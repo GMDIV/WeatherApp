@@ -3,6 +3,8 @@ import API_KEY from '../api_key';
 
 //api_key is a file that is in the .gitignore. Make a file that exports the api key as a const.
 
+//API used is from the Call 5 day / 3 hour forecast data of openweathermap.org
+
 const ROOT_URL = `http://api.openweathermap.org/data/2.5/forecast?appid=${API_KEY}`; 
 //use backticks - ` `- and ${} to add function/variable values to strings
 
@@ -19,5 +21,5 @@ export function fetchWeather(city) {
 	return {
 		type: FETCH_WEATHER,
 		payload: request
-	}
+	};
 }
